@@ -72,10 +72,10 @@ To make it possible to include a template, and then perform an operation
 on that template's output, Helm has a special `include` function:
 
 ```
-{{ include "toYaml" $value | indent 2 }}
+{{ include "myTemplate" $value | indent 2 }}
 ```
 
-The above includes a template called `toYaml`, passes it `$value`, and
+The above includes a template called `myTemplate`, passes it `$value`, and
 then passes the output of that template to the `indent` function.
 
 Because YAML ascribes significance to indentation levels and whitespace,
